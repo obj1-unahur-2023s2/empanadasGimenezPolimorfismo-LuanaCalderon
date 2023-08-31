@@ -1,0 +1,22 @@
+import empleados.*
+import encargado.*
+
+
+describe "test sobre finanzas de Galvan" {
+	method initialize() { // hace que no tenga que repetir el metodo en todos los test
+	galvan.cobrarSueldo()
+}
+test "galavan arranca con deuda cero" {
+
+	assert.equals(0,galvan.totalDeuda())
+    }
+test "Glavan arranca con dinero en cero"   {
+assert.equals(0,galvan.totalDinero())
+}
+
+test "el sueldo de galvan es de 15000"{
+assert.equals(150000,galvan.sueldo())
+}
+
+}
+
